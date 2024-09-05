@@ -1,2 +1,45 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-title-show{
+  font-size: 25px !important;
+}
+
+.card-text-show{
+  font-size: 20px !important;
+  padding-left: 15px !important;
+}
+
+.container-show{
+  padding: 0px 60px;
+}
+
+.card-text-show-desc{
+  font-size: 20px;
+  text-align: justify !important;
+}
+.card-title-show-desc{
+  font-size: 23px;
+}
+
+
+.btn-custom {
+  background-color: #ffffff;
+  border: 2px solid #007bff !important;
+  color: #007bff !important;
+}
+
+.btn-custom:hover {
+  background-color: #f8f9fa !important;
+  color: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
+
+.no-left-margin{
+  padding-left: 0 !important;
+}
