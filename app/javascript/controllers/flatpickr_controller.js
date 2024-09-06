@@ -3,6 +3,7 @@ import flatpickr from "flatpickr"
 
 export default class extends Controller {
   static targets = ["startInput", "endInput"];
+
   connect() {
     console.log("Connected to datepicker controller");
     flatpickr(this.startInputTarget, {

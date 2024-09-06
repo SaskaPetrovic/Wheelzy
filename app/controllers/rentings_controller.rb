@@ -1,6 +1,6 @@
 class RentingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_car, only: [:new, :create]
+  before_action :set_car, only: %i[new create]
 
   def index
     @rentings = current_user.rentings
@@ -16,14 +16,15 @@ class RentingsController < ApplicationController
   end
 
   def create
-    @renting = @car.rentings.build(renting_params)
-    @renting.user = current_user
-    if @renting.save
+    @renting = @car.rentings.build(renting_params.merge(user: current_user))
+    if @renting.start_at.blank? || @renting.end_at.blank?
+      flash[:alert] = "Please select both start and end dates."
+    elsif @renting.save
       flash[:notice] = "Renting was successfully created."
-      redirect_to car_path(@car)
     else
-      render 'cars/show'
+      flash[:alert] = "Car is already booked."
     end
+    redirect_to car_path(@car)
   end
 
   private

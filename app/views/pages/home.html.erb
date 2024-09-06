@@ -1,12 +1,10 @@
 <div class="container my-5">
-  <!-- Header -->
   <div class="text-center mb-4 ">
       <h1 class="display-4 padding-title">Wheelzy</h1>
       <h2>Drive your way, rent your day</h2>
       <p class="padding">Wheelzy gives you the freedom to rent the perfect car for any occasion. Connect with local car owners and find affordable, flexible options to suit your needs</p>
   </div>
 
-  <!-- Border and 'Top Rated' Section -->
   <div class="text-center mb-4">
     <div class="border border-primary mx-auto" style="width: 50%;"></div>
   </div>
@@ -14,7 +12,6 @@
   <div class="text-center my-5">
     <h2>Top Rated</h2>
   </div>
-
 
 <div class="row">
   <% @cars.each do |car| %>
@@ -40,8 +37,6 @@
     </div>
   <% end %>
 </div>
-
-
 
   <div class="text-center mt-4">
     <%= link_to "View all cars", cars_path, class: "btn btn-custom" %>

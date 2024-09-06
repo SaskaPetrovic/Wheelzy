@@ -1,5 +1,5 @@
 <div class="container">
-  <%= link_to "View All Cars", cars_path, class: "btn btn-custom mb-4" %>
+  <%= link_to "View all cars", cars_path, class: "btn btn-custom mb-4" %>
   <h1 class="my-4">My Rentings</h1>
 
   <% if @rentings.any? %>
@@ -22,7 +22,7 @@
               <p class="mb-2">
                 From <%= renting.start_at.strftime('%Y-%m-%d') %> to <%= renting.end_at.strftime('%Y-%m-%d') %>
               </p>
-              <%= total_price %> €<br>
+              <%= number_to_currency(total_price, unit: "€", precision: 0) %><br>
             </p>
           </div>
 
