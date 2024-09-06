@@ -1,9 +1,15 @@
-import { Application } from "@hotwired/stimulus"
+// Importer Application depuis Stimulus
+import { Application } from "@hotwired/stimulus";
+import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading";
 
-const application = Application.start()
+// Créer l'instance de l'application Stimulus
+const application = Application.start();
 
-// Configure Stimulus development experience
-application.debug = false
-window.Stimulus   = application
+// Charger tous les contrôleurs de manière proactive à partir du répertoire "controllers"
+eagerLoadControllersFrom("controllers", application);
 
-export { application }
+// Si vous avez besoin d'un chargement paresseux, décommentez les lignes ci-dessous
+// import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading";
+// lazyLoadControllersFrom("controllers", application);
+
+export { application };

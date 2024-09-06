@@ -7,12 +7,10 @@ class RentingsController < ApplicationController
   end
 
   def destroy
-    @renting = Renting.find(params[:id]) # Correction ici, il faut utiliser Renting au lieu de renting
+    @renting = Renting.find(params[:id])
     if @renting.user == current_user
       @renting.destroy
       flash[:notice] = "Renting successfully canceled."
-    else
-      flash[:alert] = "You do not have permission to cancel this renting."
     end
     redirect_to rentings_path
   end
@@ -20,12 +18,10 @@ class RentingsController < ApplicationController
   def create
     @renting = @car.rentings.build(renting_params)
     @renting.user = current_user
-
     if @renting.save
       flash[:notice] = "Renting was successfully created."
       redirect_to car_path(@car)
     else
-      flash[:alert] = "There was a problem creating the renting."
       render 'cars/show'
     end
   end

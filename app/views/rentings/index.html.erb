@@ -1,0 +1,42 @@
+<div class="container">
+  <%= link_to "View All Cars", cars_path, class: "btn btn-custom mb-4" %>
+  <h1 class="my-4">My Rentings</h1>
+
+  <% if @rentings.any? %>
+    <% @rentings.each do |renting| %>
+      <% car = renting.car %>
+      <% rental_days = (renting.end_at.to_date - renting.start_at.to_date).to_i %>
+      <% total_price = rental_days * car.price_per_day %>
+
+      <div class="mb-3 p-3">
+        <div class="row align-items-center">
+          <div class="col-md-3 no-left-margin">
+            <%= image_tag car.image, class: 'img-fluid', alt: 'Car Image', style: 'border-radius: 10px;' %>
+          </div>
+
+          <div class="col-md-7">
+            <div class="d-flex justify-content-between mb-2">
+              <h5 class="card-title my-2"><%= car.brand %> <%= car.model %></h5>
+            </div>
+            <p class="card-text">
+              <p class="mb-2">
+                From <%= renting.start_at.strftime('%Y-%m-%d') %> to <%= renting.end_at.strftime('%Y-%m-%d') %>
+              </p>
+              <%= total_price %> €<br>
+            </p>
+          </div>
+
+          <div class="col-md-2 d-flex align-items-center justify-content-end">
+            <%= button_to "Cancel", car_renting_path(car, renting), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-custom" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-left border-booking mb-4">
+        <div class="border border-primary" style="width: 5%;"></div>
+      </div>
+    <% end %>
+  <% else %>
+    <p>You have no rentings.</p>
+  <% end %>
+</div>
