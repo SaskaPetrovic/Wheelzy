@@ -39,37 +39,28 @@
 <!-- ## 📖 About the Project  -->
 <h2 name="about-the-project">𐙚 About the project </h2>
 
-This project was developed in **2023** as part of my *Travail de Fin d'annee* at **ETML**.  
-It is a recipe directory web application built with **Laravel** and styled entirely with **Tailwind CSS**. The project uses **phpMyAdmin** to manage a **MySQL** database.  
+Wheelzy is a car rental platform built using Ruby on Rails, with Bootstrap for styling and a touch of JavaScript for interactivity. The platform allows users to connect with local car owners and rent vehicles for different occasions, all while offering a seamless experience for booking, managing reservations, and viewing available cars.
 
-The platform allows users to browse a wide variety of recipes, filter them by category or ingredients, and search for specific dishes. Logged-in users can add their own personal recipes and create a shopping list based on the ingredients they are missing.
-
+This project aims to offer a simple yet powerful interface to manage car rentals efficiently, using a database-driven approach with user authentication for managing bookings.
 </br> 
 
-![Laravel](https://img.shields.io/badge/Laravel-10.10.1-red)  
-![PHP](https://img.shields.io/badge/PHP-8.2.0-blue)  
-![MySQL](https://img.shields.io/badge/MySQL-5.7.11-orange)  
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3.2-06b6d4)  
+![Ruby on Rails](https://img.shields.io/badge/Ruby%20on%20Rails-7.0.4-cc0000)  
+![Ruby](https://img.shields.io/badge/Ruby-3.1.0-red)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1.3-7952b3)  
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)  
+![Seed Data](https://img.shields.io/badge/Seed%20Data-Used-blue)
 
 </br> 
 
 <h2 name="technologies--environment">𐙚 Technologies & Environment </h2>
 
-✦︎ PHP 8.2.0  
+✦︎ Ruby on Rails 7.0.4
 
-✦︎ Laravel Framework 10.10.1  
+✦︎ JavaScript ES6
 
-✦︎ MySQL 5.7.11  
+✦︎ Bootstrap 5.3
 
-✦︎ phpMyAdmin 5.2.0  
-
-✦︎ Composer 2.5.1  
-
-✦︎ uWamp 3.1.0 (for local server and database management)  
-
-✦︎ Node.js v18.13.0 (for Laravel Mix & asset management)  
-
-✦︎ Tailwind CSS 3.3.2  
+✦︎ Flatpickr (for date selection)
 
 ✦︎ Visual Studio Code
 
@@ -78,25 +69,26 @@ The platform allows users to browse a wide variety of recipes, filter them by ca
 
 <h2 name="key-features">𐙚 Key Features </h2>
 
-𖤝 **Homepage**  
-  - Displays the latest recipe added.  
-  - Shows a random recipe that can be prepared in under 30 minutes.  
+𖤝 **Homepage**
 
-𖤝 **Recipes Page**  
-  - Displays all available recipes.  
-  - Filters by category and ingredients.  
-  - A search bar to quickly find a recipe.  
+- Catchy slogan: "Drive your way, rent your day."
+- Displays the 4 top-rated cars on the platform with their names, ratings (stars), and daily prices.
 
-𖤝 **Recipe Details Page**  
-  - Full description with ingredients list.  
-  - Option to adjust the number of servings, with dynamic recalculation of ingredient quantities.  
+𖤝 **All Cars Page**
 
-𖤝 **User Authentication**  
-  - Logged-in users can add, edit, and manage their own recipes.  
+- View all available cars with their names, ratings, and daily prices.
 
-𖤝 **Shopping List**  
-  - Add missing ingredients from any recipe to a personal shopping list.  
-  - View all your shopping lists in a dedicated tab.
+𖤝 **Car Details Page**
+
+- Detailed information about each car including:
+  - Car name, rating, price per day, manufacturing year, and location.
+  - Select a date using Flatpickr to book the car.
+  - Automatic message if the car is already booked for selected dates.
+
+𖤝 **My Rentings Page**
+
+- Displays all active rentals, showing the rental dates, the total price, and an option to cancel a reservation.
+
 
 
 </br> 
@@ -105,16 +97,11 @@ The platform allows users to browse a wide variety of recipes, filter them by ca
 <h2 name="getting-started">𐙚 Getting Started </h2>
 
 ### Requirements  
-✦︎ a
+✦︎ Ruby >= 3.0
 
-✦︎ a
+✦︎ Rails >= 7.0
 
-✦︎ a
-
-✦︎ a
-
-✦︎ a
-
+✦︎ Node.js (for JavaScript & asset management)
 </br> 
 
 ### Setup
@@ -188,15 +175,15 @@ http://127.0.0.1:8000
 </br> 
 <h2 name="usage">𐙚 Usage </h2>
 
-𖹭 Browse all recipes in the "Recipes" tab.  
+𖹭 Browse all available cars on the "All Cars" page.
 
-𖹭 Filter by categories and ingredients or use the search bar.  
+𖹭 View the details of each car, including rental price, year, and location.
 
-𖹭 Open a recipe to see detailed instructions and adjust the number of servings.  
+𖹭 Select a date using the Flatpickr and try to rent a car.
 
-𖹭 Add recipes if you are logged in.  
+𖹭 On the "My Rentings" page, manage your active reservations.
 
-𖹭 Create a shopping list by adding missing ingredients and consult it anytime from the dedicated tab.
+𖹭 Cancel any reservation if needed.
 
 </br> 
 <h2 name="screenshots">𐙚 Screenshots </h2>
