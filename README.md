@@ -1,67 +1,235 @@
-# Rails Rent Cars
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
 
-Dans cet exercice, vous devez implémenter des fonctionnalités dans une application web `rails` à partir du cahier des charges spécifié ci-dessous et correspondant à votre sujet :
+<!-- PROJECT LOGO -->
+<!--<h2 align="center">SasCook</h2>-->
+## Wheelzy (๑>؂•̀๑)
 
-```
-Vous devez créer une plateforme pour louer des voitures entre particuliers
-```
+<!--<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="public/img/logoSite.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Setup
 
-Clonez le dépôt GitHub et exécutez les commandes habituelles vous permettant de lancer l'application sur votre ordinateur.
+</div>-->
 
-Si vous voyez s'afficher le message `rbenv: version 3.1.2 is not installed`, exécutez la commande suivante pour installez la version de `ruby` correspondante :
+<h3 align="center">Drive your way, rent your day ヾ( ˃ᴗ˂ )◞ • *✰
+
+</br> ![](https://media1.tenor.com/m/yrq2x__E6_YAAAAd/heavenly-delusion-kiruko.gif) </h3>
+</br> 
+
+
+## 𐙚 Table of Contents
+
+➺ [About the Project](#about-the-project)  
+
+➺ [Technologies & Environment](#technologies--environment)  
+
+➺ [Key Features](#key-features)  
+
+➺ [Getting Started](#getting-started)  
+
+➺ [Usage](#usage)  
+
+➺ [Screenshots](#screenshots)  
+
+➺ [Contact](#contact)
+
+</br> 
+<!-- ## 📖 About the Project  -->
+<h2 name="about-the-project">𐙚 About the project </h2>
+
+This project was developed in **2023** as part of my *Travail de Fin d'annee* at **ETML**.  
+It is a recipe directory web application built with **Laravel** and styled entirely with **Tailwind CSS**. The project uses **phpMyAdmin** to manage a **MySQL** database.  
+
+The platform allows users to browse a wide variety of recipes, filter them by category or ingredients, and search for specific dishes. Logged-in users can add their own personal recipes and create a shopping list based on the ingredients they are missing.
+
+</br> 
+
+![Laravel](https://img.shields.io/badge/Laravel-10.10.1-red)  
+![PHP](https://img.shields.io/badge/PHP-8.2.0-blue)  
+![MySQL](https://img.shields.io/badge/MySQL-5.7.11-orange)  
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3.2-06b6d4)  
+
+</br> 
+
+<h2 name="technologies--environment">𐙚 Technologies & Environment </h2>
+
+✦︎ PHP 8.2.0  
+
+✦︎ Laravel Framework 10.10.1  
+
+✦︎ MySQL 5.7.11  
+
+✦︎ phpMyAdmin 5.2.0  
+
+✦︎ Composer 2.5.1  
+
+✦︎ uWamp 3.1.0 (for local server and database management)  
+
+✦︎ Node.js v18.13.0 (for Laravel Mix & asset management)  
+
+✦︎ Tailwind CSS 3.3.2  
+
+✦︎ Visual Studio Code
+
+</br> 
+
+
+<h2 name="key-features">𐙚 Key Features </h2>
+
+𖤝 **Homepage**  
+  - Displays the latest recipe added.  
+  - Shows a random recipe that can be prepared in under 30 minutes.  
+
+𖤝 **Recipes Page**  
+  - Displays all available recipes.  
+  - Filters by category and ingredients.  
+  - A search bar to quickly find a recipe.  
+
+𖤝 **Recipe Details Page**  
+  - Full description with ingredients list.  
+  - Option to adjust the number of servings, with dynamic recalculation of ingredient quantities.  
+
+𖤝 **User Authentication**  
+  - Logged-in users can add, edit, and manage their own recipes.  
+
+𖤝 **Shopping List**  
+  - Add missing ingredients from any recipe to a personal shopping list.  
+  - View all your shopping lists in a dedicated tab.
+
+
+</br> 
+
+
+<h2 name="getting-started">𐙚 Getting Started </h2>
+
+### Requirements  
+✦︎ a
+
+✦︎ a
+
+✦︎ a
+
+✦︎ a
+
+✦︎ a
+
+</br> 
+
+### Setup
+(ㅅ´ ˘ `)
+
+<!--
+Clone the GitHub repository using the following command 
 
 ```bash
-rbenv install 3.1.2 && gem install bundler rubocop pry pry-byebug
+git clone <repository_link>
 ```
 
-Vous pourrez alors réexécuter les commandes habituelles vous permettant de lancer l'application.
+Install all the PHP dependencies of the project with Composer: 
 
-## Base de données
+```bash
+composer install
 
-Effectuez les modifications du code nécessaires à l'obtention du schema de données suivant :
+```
 
-<img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/assess/rent_car_db_schema.png" alt="DB schema">
+Install JavaScript dependencies with npm 
 
-Une voiture n'est pas valide :
+```bash
+npm install
 
-- Si elle n'a pas de marque.
-- Si elle n'a pas de modèle.
-- Si elle n'a pas d'adresse.
-- Si son prix journalier est inférieur ou égal à zéro.
+```
 
-Une réservation n'est pas valide :
+Create a .env file by copying .env.example  
 
-- Si elle n'a pas de date de début.
-- Si elle n'a pas de date de fin.
+```bash
+cp .env.example .env
 
-La suppression d'un utilisateur doit entraîner la suppression de ses voitures et de ses réservations. La suppression d'une voiture doit entraîner la suppression de ses réservations.
+```
 
-**NB :** La gem `devise` a déjà été ajoutée et la table `users` a déjà été créée.
+Generate the Laravel application key with the following command:
 
-## Interface utilisateur
+```bash
+php artisan key:generate
 
-Effectuez les modifications du code nécessaires à l'implémentation des parcours utilisateurs suivants :
+```
 
-- En tant qu'utilisateur, je peux accéder à la page d'accueil.
-- En tant qu'utilisateur, je peux voir la liste de toutes les voitures.
-- En tant qu'utilisateur, je peux accéder aux détails d'une voiture.
-- En tant qu'utilisateur, je peux réserver une voiture.
+Run the migrations
 
-## Spécifications
+```bash
+php artisan migrate
 
-- Respectez les conventions de `rails`.
-- La page d'accueil doit contenir un lien permettant d'accéder à la liste des voitures.
-- La page listant les voitures doit contenir les liens permettant d'accéder aux détails de chaque voiture.
-- La page affichant les détails d'une voiture doit contenir un lien permettant de retourner sur la page listant toutes les voitures.
-- La page affichant les détails d'une voiture doit contenir le formulaire permettant de faire une réservation.
-- Le formulaire de réservation doit utiliser un sélecteur de date <a href="https://flatpickr.js.org/examples/" target="_blank">Flatpickr</a> pour faciliter la saisie des dates, de type <a href="https://flatpickr.js.org/examples/#range-calendar" target="_blank">range</a>, le plus adapté a la saisie d'une période.
-- Lors de la soumission du formulaire de réservation, l'utilisateur doit être redirigé vers la page de détails de la voiture et une <a href="https://www.rubyguides.com/2019/11/rails-flash-messages/" target="_blank">notification flash</a> doit s'afficher pour confirmer la réservation.
+```
 
-## Ressources
+Seed the database with initial data 
 
-Pour avoir une interface soignée, nous vous conseillons d'utiliser :
+```bash
+php artisan db:seed
 
-- <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">Bootstrap</a> (déjà installé)
-- <a href="https://uikit.lewagon.com/" target="_blank">L'UI Kit du Wagon</a>
+```
+
+Start the development server
+
+```bash
+php artisan serve
+
+```
+
+Access the project
+
+```bash
+http://127.0.0.1:8000
+
+```
+-->
+(づ ᴗ _ᴗ)づ♡
+
+</br> 
+<h2 name="usage">𐙚 Usage </h2>
+
+𖹭 Browse all recipes in the "Recipes" tab.  
+
+𖹭 Filter by categories and ingredients or use the search bar.  
+
+𖹭 Open a recipe to see detailed instructions and adjust the number of servings.  
+
+𖹭 Add recipes if you are logged in.  
+
+𖹭 Create a shopping list by adding missing ingredients and consult it anytime from the dedicated tab.
+
+</br> 
+<h2 name="screenshots">𐙚 Screenshots </h2>
+
+### Homepage
+<p align="left">
+  <img src="" width="70%" />
+</p>
+
+### Cars Page
+<p align="left">
+  <img src="" width="70%" />
+  <img src="" width="70%" />
+</p>
+
+### Cars Details Page
+<p align="left">
+  <img src="" width="70%" />
+</p>
+
+### Rentings Page
+<p align="left">
+  <img src="" width="70%" />
+</p>
+
+
+
+[View Demo on youtube]() ( ꈍ◡ꈍ)
+
+
+</br> 
+<h2 name="contact">☕︎ Connect with me</h2>
+
+˗ˏˋ ✉︎ ˎˊ˗  **saskapetrovic.pro@gmail.com**
+
+˗ˏˋ ✎ ˎˊ˗  [LinkedIn](https://www.linkedin.com/in/saska-petrovic-2137072a2)
