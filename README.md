@@ -192,23 +192,23 @@ http://localhost:3000
 
 ### Homepage
 <p align="left">
-  <img src="" width="70%" />
+  <img src="public/screenshot-homepage.png" width="70%" />
 </p>
 
 ### Cars Page
 <p align="left">
-  <img src="" width="70%" />
-  <img src="" width="70%" />
+  <img src="public/screenshot-cars.png" width="70%" />
 </p>
 
 ### Cars Details Page
 <p align="left">
-  <img src="" width="70%" />
+  <img src="public/screenshot-details.png" width="70%" />
+  <img src="public/screenshot-flatpickr.png" width="70%" />
 </p>
 
 ### Rentings Page
 <p align="left">
-  <img src="" width="70%" />
+  <img src="public/screenshot-rentings.png" width="70%" />
 </p>
 
 
