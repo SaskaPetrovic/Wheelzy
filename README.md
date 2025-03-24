@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <!--<h2 align="center">SasCook</h2>-->
-## Wheelzy (๑>؂•̀๑)
+## Wheelzy ٩(^ᗜ^ )و ´-
 
 <!--<div align="center">
   <a href="https://github.com/github_username/repo_name">
@@ -13,7 +13,7 @@
 
 </div>-->
 
-<h3 align="center">Drive your way, rent your day ヾ( ˃ᴗ˂ )◞ • *✰
+<h3 align="center">Drive your way, rent your day (˵ •̀ ᴗ - ˵ ) ✧
 
 </br> ![](https://media1.tenor.com/m/yrq2x__E6_YAAAAd/heavenly-delusion-kiruko.gif) </h3>
 </br> 
@@ -43,7 +43,7 @@
 
 Wheelzy is a car rental platform built using Ruby on Rails, with Bootstrap for styling and a touch of JavaScript for interactivity. The platform allows users to connect with local car owners and rent vehicles for different occasions, all while offering a seamless experience for booking, managing reservations, and viewing available cars.
 
-This project aims to offer a simple yet powerful interface to manage car rentals efficiently, using a database-driven approach with user authentication for managing bookings.
+This project aims to provide a simple yet powerful interface for efficiently managing car rentals, using pre-generated data (seeds) and user authentication to handle rentals.
 </br> 
 
 ![Ruby on Rails](https://img.shields.io/badge/Ruby%20on%20Rails-7.0.4-cc0000)  
