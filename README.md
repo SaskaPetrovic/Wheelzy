@@ -31,6 +31,8 @@
 
 ➺ [Usage](#usage)  
 
+➺ [Future Modifications](#future-modifications)  
+
 ➺ [Screenshots](#screenshots)  
 
 ➺ [Contact](#contact)
@@ -107,69 +109,50 @@ This project aims to offer a simple yet powerful interface to manage car rentals
 ### Setup
 (ㅅ´ ˘ `)
 
-<!--
+
 Clone the GitHub repository using the following command 
 
 ```bash
 git clone <repository_link>
 ```
 
-Install all the PHP dependencies of the project with Composer: 
+Install all the dependencies of the project
 
 ```bash
-composer install
+bundle install
 
 ```
 
-Install JavaScript dependencies with npm 
+Install JavaScript dependencies
 
 ```bash
 npm install
 
 ```
 
-Create a .env file by copying .env.example  
+Setup the database by running the following command
 
 ```bash
-cp .env.example .env
+rails db:create
+rails db:migrate
+rails db:seed
 
 ```
 
-Generate the Laravel application key with the following command:
+Start the Rails development server
 
 ```bash
-php artisan key:generate
-
-```
-
-Run the migrations
-
-```bash
-php artisan migrate
-
-```
-
-Seed the database with initial data 
-
-```bash
-php artisan db:seed
-
-```
-
-Start the development server
-
-```bash
-php artisan serve
+rails server
 
 ```
 
 Access the project
 
 ```bash
-http://127.0.0.1:8000
+http://localhost:3000
 
 ```
--->
+
 (づ ᴗ _ᴗ)づ♡
 
 </br> 
@@ -184,6 +167,25 @@ http://127.0.0.1:8000
 𖹭 On the "My Rentings" page, manage your active reservations.
 
 𖹭 Cancel any reservation if needed.
+
+</br> 
+
+<h2 name="future-modifications">𐙚 Future Modifications </h2>
+
+✦︎ **Display availability**  
+  - Show if the car is already booked for the selected dates.
+
+✦︎ **Car Ratings**  
+  - Allow users to rate the cars after they have rented them.
+
+✦︎ **More Photos**  
+  - Add additional images for each car to give users a better view.
+
+✦︎ **Complete Descriptions**  
+  - Provide more detailed descriptions for each car to better inform users.
+
+✦︎ **Reservation Status**  
+  - On the car details page, display a message if the user has already reserved the car for specific dates.
 
 </br> 
 <h2 name="screenshots">𐙚 Screenshots </h2>
