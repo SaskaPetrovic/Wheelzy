@@ -113,7 +113,7 @@ This project aims to offer a simple yet powerful interface to manage car rentals
 Clone the GitHub repository using the following command 
 
 ```bash
-git clone <repository_link>
+git clone git@github.com:SaskaPetrovic/Wheelzy.git
 ```
 
 Install all the dependencies of the project
