@@ -1,17 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
 
-<!-- PROJECT LOGO -->
-<!--<h2 align="center">SasCook</h2>-->
 ## Wheelzy ٩(^ᗜ^ )و ´-
-
-<!--<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="public/img/logoSite.png" alt="Logo" width="80" height="80">
-  </a>
-
-
-</div>-->
 
 <h3 align="center">Drive your way, rent your day (˵ •̀ ᴗ - ˵ ) ✧
 
