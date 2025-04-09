@@ -64,22 +64,22 @@ This project aims to provide a simple yet powerful interface for efficiently man
 𖤝 **Homepage**
 
 - Catchy slogan: "Drive your way, rent your day."
-- Displays the 4 top-rated cars on the platform with their names, ratings (stars), and daily prices.
+- Displays the 4 top-rated cars on the platform with their names, ratings (stars), and daily prices
 
 𖤝 **All Cars Page**
 
-- View all available cars with their names, ratings, and daily prices.
+- View all available cars with their names, ratings, and daily prices
 
 𖤝 **Car Details Page**
 
-- Detailed information about each car including:
-  - Car name, rating, price per day, manufacturing year, and location.
-  - Select a date using Flatpickr to book the car.
-  - Automatic message if the car is already booked for selected dates.
+- Detailed information about each car including :
+  - Car name, rating, price per day, manufacturing year, and location
+  - Select a date using Flatpickr to book the car
+  - Automatic message if the car is already booked for selected dates
 
 𖤝 **My Rentings Page**
 
-- Displays all active rentals, showing the rental dates, the total price, and an option to cancel a reservation.
+- Displays all active rentals, showing the rental dates, the total price, and an option to cancel a reservation
 
 
 
@@ -148,34 +148,34 @@ http://localhost:3000
 </br> 
 <h2 name="usage">𐙚 Usage </h2>
 
-𖹭 Browse all available cars on the "All Cars" page.
+𖹭 Browse all available cars on the "All Cars" page
 
-𖹭 View the details of each car, including rental price, year, and location.
+𖹭 View the details of each car, including rental price, year, and location
 
-𖹭 Select a date using the Flatpickr and try to rent a car.
+𖹭 Select a date using the Flatpickr and try to rent a car
 
-𖹭 On the "My Rentings" page, manage your active reservations.
+𖹭 On the "My Rentings" page, manage your active reservations
 
-𖹭 Cancel any reservation if needed.
+𖹭 Cancel any reservation if needed
 
 </br> 
 
 <h2 name="future-modifications">𐙚 Future Modifications </h2>
 
 ✦︎ **Display availability**  
-  - Show if the car is already booked for the selected dates.
+  - Show if the car is already booked for the selected dates
 
 ✦︎ **Car Ratings**  
-  - Allow users to rate the cars after they have rented them.
+  - Allow users to rate the cars after they have rented them
 
 ✦︎ **More Photos**  
-  - Add additional images for each car to give users a better view.
+  - Add additional images for each car to give users a better view
 
 ✦︎ **Complete Descriptions**  
-  - Provide more detailed descriptions for each car to better inform users.
+  - Provide more detailed descriptions for each car to better inform users
 
 ✦︎ **Reservation Status**  
-  - On the car details page, display a message if the user has already reserved the car for specific dates.
+  - On the car details page, display a message if the user has already reserved the car for specific dates
 
 </br> 
 <h2 name="screenshots">𐙚 Screenshots </h2>
